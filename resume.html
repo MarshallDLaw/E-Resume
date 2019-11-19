@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
+    <style>
+        .container {
+            position: absolute;
+            width: 800px;
+            height: 1250px;
+
+            background: rgb(236, 236, 236);
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .insidecontainer {
+            position: relative;
+            width: 350px;
+            height: 1250px;
+            background: rgb(77, 77, 77);
+            bottom: 950px;
+
+            border-right: 1px solid black;
+        }
+
+        .img {
+            position: relative;
+            width: 222px;
+            height: 222px;
+            top: 40px;
+            left: 65px;
+            background-color: white;
+            border: 2px solid black;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .mainimage {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border: black 2px solid;
+            top: 8px;
+            left: 8px;
+        }
+
+        .tagbox1 {
+            position: relative;
+            padding: 0 8px;
+            font-size: 32px;
+            margin: 0 -10px 0 0;
+            width: 315px;
+            height: 50px;
+            color: #e6e2c8;
+            border-radius: 2.5px 0 0 2.5px;
+            background: red;
+            box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+            top: 100px;
+            left: 35px;
+
+
+            font-family: Proza Libre;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgb(233, 233, 233);
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .tagbox1::after {
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            border-top: 8px solid rgb(116, 4, 4);
+            border-right: 15px solid transparent;
+            box-shadow: 1px 2px 3px rgba(8, 0, 0, 0);
+        }
+
+        .tagbox2 {
+            position: relative;
+            padding: 0 8px;
+            font-size: 32px;
+            margin: 0 -10px 0 0;
+            width: 315px;
+            height: 50px;
+            color: #e6e2c8;
+            border-radius: 2.5px 0 0 2.5px;
+            background: red;
+            box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+            top: 135px;
+            left: 35px;
+
+            font-family: Proza Libre;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgb(233, 233, 233);
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .tagbox2::after {
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            border-top: 8px solid rgb(116, 4, 4);
+            border-right: 15px solid transparent;
+            box-shadow: 1px 2px 3px rgba(8, 0, 0, 0);
+        }
+
+        .tagbox3 {
+            position: relative;
+            padding: 0 8px;
+            font-size: 32px;
+            margin: 0 -10px 0 0;
+            width: 315px;
+            height: 50px;
+            color: #e6e2c8;
+            border-radius: 2.5px 0 0 2.5px;
+            background: red;
+            box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+            top: 330px;
+            left: 35px;
+
+            font-family: Proza Libre;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgb(233, 233, 233);
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .tagbox3::after {
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            border-top: 8px solid rgb(116, 4, 4);
+            border-right: 15px solid transparent;
+            box-shadow: 1px 2px 3px rgba(8, 0, 0, 0);
+        }
+
+        .tagbox4 {
+            position: relative;
+            padding: 0 8px;
+            font-size: 32px;
+            margin: 0 -10px 0 0;
+            width: 315px;
+            height: 50px;
+            color: #e6e2c8;
+            border-radius: 2.5px 0 0 2.5px;
+            background: red;
+            box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+            top: 560px;
+            left: 35px;
+
+            font-family: Proza Libre;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgb(233, 233, 233);
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .tagbox4::after {
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            border-top: 8px solid rgb(116, 4, 4);
+            border-right: 15px solid transparent;
+            box-shadow: 1px 2px 3px rgba(8, 0, 0, 0);
+        }
+
+        .contactflexbox {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 120px;
+            left: 35px;
+            width: 280px;
+            flex-wrap: wrap;
+        }
+
+        .contactflexbox>div {
+            margin: 5px;
+            text-align: center;
+            line-height: 0px;
+            font-size: 20px;
+            background: rgb(77, 77, 77);
+        }
+
+        .name::before {
+            content: 'Amritpal Singh ';
+            position: absolute;
+            width: 332px;
+            height: 112px;
+            left: 400px;
+            top: 70px;
+
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 56px;
+            align-items: center;
+            color: rgb(83, 83, 83);
+            text-shadow: 0px 4px 4px rgba(83, 83, 83, 0.616);
+        }
+
+        .name::after {
+            content: 'Matharu';
+            position: absolute;
+            width: 332px;
+            height: 112px;
+            left: 400px;
+            top: 120px;
+
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 56px;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            text-shadow: 0px 4px 4px rgba(83, 83, 83, 0.616);
+        }
+
+        .icon {
+            display: inline-block;
+            float: left;
+        }
+
+        .icon-text {
+            float: center;
+            display: inline-block;
+            font-size: 15px;
+            color: white;
+
+        }
+
+        .table {
+            position: absolute;
+            top: 590px;
+            left: 35px;
+            border-spacing: 5px 20px;
+        }
+
+        .table2 {
+            position: absolute;
+            top: 835px;
+            left: 35px;
+            border-spacing: 5px 20px;
+
+        }
+
+        .progress {
+            border: white solid 2px;
+            border-radius: 5px;
+            width: 200px;
+            padding: 5px;
+            height: 5px;
+        }
+
+        .progressbar {
+            height: 5px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .progressbar-text {
+            color: white;
+        }
+
+        .skillsflexbox {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 1125px;
+            left: 35px;
+            width: 280px;
+            flex-wrap: wrap;
+        }
+
+        .skillsflexbox>div {
+            background-color: rgb(71, 71, 71);
+            width: 35px;
+            margin: 10px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 30px;
+            background: rgb(77, 77, 77);
+
+        }
+
+        .educationicon {
+            position: relative;
+            top: 315px;
+            left: 390px;
+            width: 35px;
+            height: 35px;
+            border-left: solid black 1px;
+            border-right: solid black 1px;
+        }
+
+        .educationp {
+            position: relative;
+            top: 284px;
+            left: 390px;
+            border-top: 3px black solid;
+            width: 370px;
+        }
+
+        .educationh {
+            position: relative;
+            top: 280px;
+            left: 435px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+            display: flex;
+            align-items: center;
+        }
+
+        .experienceicon {
+            position: relative;
+            top: 315px;
+            left: 390px;
+            width: 35px;
+            height: 35px;
+            border-top: solid black 1px;
+            border-left: solid black 1px;
+            border-right: solid black 1px;
+        }
+
+        .experiencep {
+            position: relative;
+            top: 284px;
+            left: 390px;
+            border-top: 3px black solid;
+            width: 370px;
+        }
+
+        .experienceh {
+            position: relative;
+            top: 280px;
+            left: 435px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+            display: flex;
+            align-items: center;
+        }
+
+        .aboutme::before {
+            content: "About Me";
+            position: relative;
+            top: 20px;
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 25px;
+            align-items: center;
+
+        }
+
+        .aboutme {
+            color: rgb(0, 0, 0);
+            position: absolute;
+            top: 170px;
+            left: 390px;
+
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            align-items: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .aboutme::after {
+            content: "I am a 21-year old gaming enthusiast, who also enjoys coding during free time. Sketching and working out is my past-time Hobbies. ";
+            position: relative;
+            top: 20px;
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            align-items: center;
+        }
+        .btn {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  top: 700px;
+  left: 200px;
+  position: relative;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="educationicon"><img src="educationicon.png" title="Education" alt="educationicon.png" height="35px"
+                width="35px">
+        </div>
+        <div class="educationh">Education</div>
+        <div class="educationp"> <br>
+            <b>10th
+                SSC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013</b>
+            <br> St. Joseph School Orlem <br> <br>
+            <b>12th
+                HSC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</b>
+            <br>
+            Prakash College <br> <br>
+            <b>Personal
+                Training&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</b>
+            <br> K11 School Of Fitness Science <br> <br>
+            <b>Sports Nutrition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</b>
+            <br> K11 School Of Fitness Science
+            <br><br><br><br><br><br><br><br><br>
+
+
+                
+        </div>
+        <div class="experienceicon"><img src="experienceicon.png" alt="experienceicon" title="Experience" height="35px"
+                width="35px">
+        </div>
+        <div class="experienceh">Experience</div>
+        <div class="experiencep">
+            <b> Administrative Assistant, ABC Company, City, State, 2006 to present </b> <br>
+            - Use a combination of verbs and nouns to describe job duties and accomplishments that are most relevant to
+            the work you are currently seeking. <br>
+            - Don't forget to include a variety of targeted keywords <br>
+            - List jobs in reverse chronological order; your most recent job goes first. <br> <br>
+
+            <b> Administrative Assistant, XYZ Company, City, State, 2000 to 2006 </b> <br>
+            - Continue to use verbs and nouns to describe job duties and accomplishments that are most relevant to the
+            work you are currently seeking and target important keywords. <br> <br>
+
+            <b> Customer Service Representative, Another Company, City, State, 1998 to 2000 </b> <br>
+            - Continue to use verbs and nouns to describe job duties and include important keywords. <br>
+            - Normally you should only include your most recent ten years of work experience on your resume. There are
+            exceptions, but typically employers are most interested in your most recent experience, and going back more
+            than ten years on your resume can age you.
+        </div>
+        <div class="name"></div>
+        <div class="aboutme">
+            <p></p>
+        </div>
+        <div class="insidecontainer">
+            <div class="img"><img class="mainimage" src="download.png" alt="download.png" title>
+            </div>
+            <div class="tagbox1">Contact</div>
+            <div class="contactflexbox">
+                <div><img class="icon" src="callicon.png" alt="callicon.png" title="Phone Number" height="35px"
+                        width="35px">
+                    <p class="icon-text"> +91 8080190380 / +91 7045202610</p>
+                </div>
+                <div><img class="icon" src="emailicon.png" alt="emailicon.png" title="Email" height="35px" width="35px">
+                    <p class="icon-text">agmatharu@gmail.com </p>
+                </div>
+                <div><img class="icon" src="addressicon.png" alt="addressicon.png" title="Address" height="35px"
+                        width="35px">
+                    <p class="icon-text">2391 Joy Lane, SPARR, FL, Florida</p>
+                </div>
+            </div>
+            <div class="tagbox2">Language</div>
+            <table class="table">
+                <tr>
+                    <td class="progressbar-text">English</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:90%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="progressbar-text">Hindi</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:85%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="progressbar-text">Marathi</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:40%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="progressbar-text">Punjabi</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:90%"></div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <div class="tagbox3">Skills</div>
+            <table class="table2">
+                <tr>
+                    <td class="progressbar-text">Database</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:85%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="progressbar-text">HTML</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:95%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="progressbar-text">Branding</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:90%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="progressbar-text">Designing</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:70%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="progressbar-text">Javascript</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progressbar" style="width:80%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <div class="tagbox4">Hobbies</div>
+                <div class="skillsflexbox">
+                    <div><img src="gamingicon.png" alt="gamingicon.png" title="Gaming" height="35px" width="35px"></div>
+                    <div><img src="kickboxing.png" alt="kickboxing.png" title="Kickboxing" height="35px" width="35px">
+                    </div>
+                    <div><img src="movieicon.png" alt="movieicon.png" title="Movie" height="35px" width="35px"></div>
+                    <div><img src="jujitsuicon.png" alt="jujitsuicon.png" title="Jusjitsu" height="35px" width="35px">
+                    </div>
+                    <div><img src="cyclingicon.png" alt="cyclingicon.png" title="Cycling" height="35px" width="35px">
+                    </div>
+                    <div><img src="swimmingicon.png" alt="swimmingicon.png" title="Swimming" height="35px" width="35px">
+                    </div>
+                    <div><img src="chessicon.png" alt="chessicon.png" title="Chess" height="35px" width="35px"></div>
+                    <div><img src="gymicon.png" alt="gymicon.png" title="Gym" height="35px" width="35px"></div>
+                    <div><img src="poolicon.png" alt="poolicon.png" title="Pool" height="35px" width="35px"></div>
+                    <div><img src="musicicon.png" alt="musicicon.png" title="Music" height="35px" width="35px"></div>
+
+                </div>
+
+
+
+        </div>
+    </div>
+    <button class="btn" style="width:100%"><i class="fa fa-download"></i> Download</button>
+</body>
+
+</html>
